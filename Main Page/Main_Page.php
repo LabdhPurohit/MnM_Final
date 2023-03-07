@@ -5,7 +5,6 @@
         $URL="https://barkhawedsmridul.azurewebsites.net/";
         echo "<script type='text/javascript'>document.location.href='{$URL}';</script>";
         echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
-        echo "<p class='w-100 text-center'>Ighjghjg.</p>";
     }
     ?>
 <!DOCTYPE html>
