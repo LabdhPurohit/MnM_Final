@@ -53,7 +53,7 @@
             if ($password == "mnm10032023") {
                 // Successful login
                 $_SESSION['loggedin'] = true;
-                header("Location: https://barkhawedsmridul.azurewebsites.net/Main%20Page/Main_Page.php");
+                header("Location: lol.html");
                 exit;
             } else {
                 // Invalid login credentials
