@@ -39,7 +39,7 @@
 	          </form>
 			  <?php
     session_start();
-
+try{
     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         header("Location: Main Page/Main_Page.php");
                 exit;
@@ -50,7 +50,7 @@
             $password = $_POST['password-field'];
             
             // Check if the username and password are correct
-            if ($password == "mnm10032023") {
+            if ($password == "dis") {
                 // Successful login
                 $_SESSION['loggedin'] = true;
                 header("Location: lol.html");
@@ -61,6 +61,10 @@
             }
         }
     }
+}
+catch (Exception $e) {
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+}
     ?>
 	          <p class="w-100 text-center">&mdash; Developed By Labdh Purohit &mdash;</p>
 			  <p class="w-100 text-center"> For any issue regarding password then please contact bride or groom. </p>
