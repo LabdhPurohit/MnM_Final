@@ -1,14 +1,11 @@
 <?php
 session_start();
-if ($_SESSION['loggedin'] == true) {
-  exit();
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     // User is not logged in, redirect to login page
-}
-elseif($_SESSION['loggedin'] != true){
     $URL="https://barkhawedsmridul.azurewebsites.net/";
     echo "<script type='text/javascript'>document.location.href='{$URL}';</script>";
     echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
-  }
+}
 ?>
 <!DOCTYPE html>
 <html>
