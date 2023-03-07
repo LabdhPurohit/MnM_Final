@@ -7,14 +7,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<?php
-    session_start();
-    if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-        // User is not logged in, redirect to login page
-        header("Location: http://localhost/MONADIDIMAIN/index.php");
-        exit;
-    }
-    ?>
+
 	<!-- <video autoplay muted loop id="myVideo">
   <source src="Untitled design.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
