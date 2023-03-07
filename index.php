@@ -13,9 +13,10 @@
             // Check if the username and password are correct
             if ($password == "dis") {
                 // Successful login
-                $_SESSION['loggedin'] = true;
-                header("Location: https://www.google.com");
-                exit;
+//                 $_SESSION['loggedin'] = true;
+//                 header("Location: https://www.google.com");
+//                 exit;
+		    echo "<p class='w-100 text-center'>WORKING</p>";
             } else {
                 // Invalid login credentials
                 echo "<p class='w-100 text-center'>Invalid login credentials.</p>";
