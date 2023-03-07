@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	</head>
-	<body class="img js-fullheight" style="background-image: url(https://picsum.photos/1920/1080/?blur=5);">
+	<body class="img js-fullheight" style="background-image: url(https://picsum.photos/1920/1080/?blur=5); background-position: center; background-size: cover;">
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
