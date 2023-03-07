@@ -29,7 +29,7 @@
             if ($password == "dis") {
                 // Successful login
                 $_SESSION['loggedin'] = true;
-                header("Location: lol.html");
+                header("Location: https://www.google.com");
                 exit;
             } else {
                 // Invalid login credentials
