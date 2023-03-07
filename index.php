@@ -13,6 +13,32 @@
 
 	</head>
 	<body class="img js-fullheight" style="background-image: url(https://picsum.photos/1920/1080/?blur=5);">
+		 <?php
+    session_start();
+
+    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+        header("Location: Main Page/Main_Page.php");
+                exit;
+    } else {
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            // Validate login credentials
+            // $username = $_POST['username'];
+            $password = $_POST['password-field'];
+            
+            // Check if the username and password are correct
+            if ($password == "dis") {
+                // Successful login
+                $_SESSION['loggedin'] = true;
+                header("Location: lol.html");
+                exit;
+            } else {
+                // Invalid login credentials
+                echo "<p class='w-100 text-center'>Invalid login credentials.</p>";
+            }
+        }
+    }
+
+    ?>
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -37,35 +63,7 @@
 	            	<!-- <button type="submit" class="form-control btn btn-primary submit px-3">LogIn</button> -->
 	            </div>
 	          </form>
-			  <?php
-    session_start();
-try{
-    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-        header("Location: Main Page/Main_Page.php");
-                exit;
-    } else {
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            // Validate login credentials
-            // $username = $_POST['username'];
-            $password = $_POST['password-field'];
-            
-            // Check if the username and password are correct
-            if ($password == "dis") {
-                // Successful login
-                $_SESSION['loggedin'] = true;
-                header("Location: lol.html");
-                exit;
-            } else {
-                // Invalid login credentials
-                echo "<p class='w-100 text-center'>Invalid login credentials.</p>";
-            }
-        }
-    }
-}
-catch (Exception $e) {
-    echo 'Caught exception: ',  $e->getMessage(), "\n";
-}
-    ?>
+			 
 	          <p class="w-100 text-center">&mdash; Developed By Labdh Purohit &mdash;</p>
 			  <p class="w-100 text-center"> For any issue regarding password then please contact bride or groom. </p>
 		      </div>
