@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+        // User is not logged in, redirect to login page
+            $URL="https://www.barkhawedsmridul.site";
+            echo "<script type='text/javascript'>document.location.href='{$URL}';</script>";
+            echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
+    }
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,14 +37,7 @@
 
 </head>
 <body>
-<?php
-    session_start();
-    if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-        // User is not logged in, redirect to login page
-        header("Location: http://localhost/MONADIDIMAIN/index.php");
-        exit;
-    }
-    ?>
+
   <div class="site-wrap">
 
     <div class="site-mobile-menu">
