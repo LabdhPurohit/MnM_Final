@@ -18,7 +18,7 @@ ob_start();
                 	$URL="Main Page/Main_Page.php";
 			echo "<script type='text/javascript'>document.location.href='{$URL}';</script>";
 			echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
-			echo "<p class='w-100 text-center'>Ighjghjg.</p>";
+		    	exit();
 // 		    echo "<p class='w-100 text-center'>WORKING</p>";
             } else {
                 // Invalid login credentials
