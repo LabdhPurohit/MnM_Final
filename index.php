@@ -53,7 +53,7 @@
             if ($password == "mnm10032023") {
                 // Successful login
                 $_SESSION['loggedin'] = true;
-                header("Location: Main Page/Main_Page.php");
+                header("Location: https://www.google.com");
                 exit;
             } else {
                 // Invalid login credentials
