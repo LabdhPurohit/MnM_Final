@@ -58,7 +58,7 @@
         <div class="row align-items-center">
 
           <div class="col-6 col-xl-2" data-aos="fade-down">
-            <h1 class="mb-0"><a href="http://localhost/MONADIDIMAIN/index.php" class="text-white h2 mb-0">Back</a></h1>
+            <h1 class="mb-0"><a href="https://www.barkhawedsmridul.site/Main%20Page/Main_Page.php" class="text-white h2 mb-0">Back</a></h1>
           </div>
           <!-- <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
