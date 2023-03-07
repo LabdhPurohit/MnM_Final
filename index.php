@@ -14,7 +14,7 @@ ob_start();
             $password = $_POST['password-field'];
             
             // Check if the username and password are correct
-            if ($password == "dis") {
+            if ($password == "mnm10") {
                 // Successful login
                 $_SESSION['loggedin'] = true;
                 	$URL="Main Page/Main_Page.php";
@@ -34,7 +34,7 @@ ob_start();
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Barkha Weds Mridul</title>
+  	<title>MintuसीMona Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
